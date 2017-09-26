@@ -28,6 +28,10 @@ namespace NetCoreWebApp
                 app.UseDeveloperExceptionPage();
             }
 
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
+            app.UseFileServer(enableDirectoryBrowsing: true);
+
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
