@@ -34,7 +34,7 @@ namespace NetCoreWebApp
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync($"Hello World! {NetStandardClassLibrary.Class1.ReturnName()}");
             });
         }
     }

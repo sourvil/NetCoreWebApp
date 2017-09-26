@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetStandardClassLibrary\NetStandardClassLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
